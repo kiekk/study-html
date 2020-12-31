@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>테이블 캡션</title>
+<style>
+	caption {
+		width: 600px;
+		height: 30px;
+	}
+	table,tr,th,td {
+		border:1px solid black;
+		border-collapse: collapse;
+	}
+
+</style>
+</head>
+<body>
+<!--
+	<caption>태그를 사용하면 테이블의 상단에 제목이나 짧은 설명을 붙일 수 있습니다.
+	<table>태그 하나 당 하나의 <caption>태그만 사용 가능합니다.  
+-->
+<table>
+	<caption>
+		<strong>Programming Language</strong>
+		전 세계에서 많이 사용하는 프로그래밍 언어
+	</caption>
+	<tr>
+		<th>언어</th>
+		<th>종류</th>
+		<th>다운로드</th>
+	</tr>
+	<tr>
+		<th>C언어</th>
+		<td rowspan="3">컴파일 언어</td>
+		<td style="cursor:pointer" onClick="location.href='https://visualstudio.microsoft.com/ko/downloads/'">Visual Studio 다운로드</td>
+	</tr>
+	<tr>
+		<th rowspan="2">자바</th>	
+		<td style="cursor:pointer" onClick="location.href='https://www.oracle.com/kr/java/technologies/javase-downloads.html'">JDK 다운로드</td>
+	</tr>
+	<tr>
+		<td style="cursor:pointer" onClick="location.href='https://www.eclipse.org/downloads/'">Eclipse 다운로드</td>
+	</tr>
+	<tr>
+		<th>파이썬</th>		
+		<td>스크립트 언어</td>
+		<td style="cursor:pointer" onClick="location.href='https://www.python.org/downloads/'">파이썬 다운로드</td>
+	</tr>
+</table>
+</body>
+</html>
