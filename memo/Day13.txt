@@ -1,0 +1,9 @@
+Day13(20.07.25)
+
+파일질라
+main.html, css폴더, images폴더 전송
+
+
+login.html 업로드
+
+appearance 

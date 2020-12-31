@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>추가 폼 태그</title>
+</head>
+<body>
+    <form>
+        <p>이메일  : <input type="email" name="email"></p>
+        <!-- 강제성이 없고,그냥 알려주는 정도.submit하면 @이 없어도 데이터가 전송됨. 따라서 js를 이용해서 제어하는 방법을 더 많이 사용 -->
+        <p>웹사이트 : <input type="url" name="website"></p>
+        <p>휴대폰번호 : <input type="tel" name="hp"></p>
+        <p>가입날짜 : <input type="date" name="regdata"></p>
+        <!-- 달력 이미지가 나타남. 브라우저마다 모양은 조금씩 상이 -->
+        <p>나이(만) : <input type="number" min="1" max="100" step="1" name="age"></p>
+        <p>프로그래밍 능력 (상, 중, 하) : <input type="range" min="1" max="3" value="2" name="dev"></p>
+        <p>원하는 색상 : <input type="color" name="color"></p>
+        <p>쿠폰 : <input type="search" name="coupon"></p>
+        <p>관심분야 : <input type="text" list="interests" name="interests"></p>
+        <datalist id="interests">
+            <option value="자동차" label="테크놀러지"></option>
+            <option value="가전제품" label="테크놀러지"></option>
+            <option value="소프트웨어" label="테크놀러지"></option>
+            <option value="컴퓨터" label="테크놀러지"></option>
+            <option value="영화" label="엔터테인먼트"></option>
+            <option value="게임" label="엔터테인먼트"></option>
+            <option value="공연" label="엔터테인먼트"></option>
+            <option value="음악" label="엔터테인먼트"></option>
+        </datalist>
+    </form>
+</body>
+</html>

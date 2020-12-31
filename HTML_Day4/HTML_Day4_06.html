@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 요소</title>
+</head>
+<body>
+    <h2>폼 요소</h2>
+    <form method="post" action="regist.php" enctype ="multipart/form-data">
+        <p>아이디 : <input type="text" size="15" maxlength="20" placeholder="아이디를 입력하세요."name="userid" required></p>
+        <p>비밀번호 : <input type="password" size="15" placeholder="비밀번호를 입력하세요."name="userpw" required></p>
+        <p>
+            <fieldset>
+                <legend>성별</legend>
+                <label>남자<input type="radio" name="gender" value="남자" checked></label> 
+                <label for="gender">여자</label><input type="radio" name="gender" value="여자" id="gender">
+            </fieldset>
+        </p>
+        <p>
+            <fieldset>
+                <legend>취미</legend>
+                <label>드라이브 <input type="checkbox" name="hobby" value="드라이브"></label>
+                <label>등산 <input type="checkbox" name="hobby" value="등산"></label>
+                <label>영화감상 <input type="checkbox" name="hobby" value="영화감상"></label>
+                <label>쇼핑 <input type="checkbox" name="hobby" value="쇼핑"></label>
+                <label>게임 <input type="checkbox" name="hobby" value="게임"></label>
+            </fieldset>
+        </p>
+        <p>파일 업로드 : <input type="file" name="file"></p>
+        <p>우편번호 : <input type="text" size="5" name="zipcode" readonly><input type="button" value="우편번호검색"></p>
+        <p>주소 : <input type="text" size="30" name="address1"></p>
+        <p>상세주소 : <input type="text" size="30" name="address2"></p>
+        <p>참고항목 : <input type="text" size="30" name="address3" disabled></p>
+        <p>직업 : 
+            <select name="job">
+                <option value="#">선택하세요.</option>
+                <option value="학생">학생</option>
+                <option value="컴퓨터/인터넷">컴퓨터/인터넷</option>
+                <option value="언론">언론</option>
+                <option value="공무원" selected>공무원</option>
+                <option value="서비스업">서비스업</option>
+                <option value="의료">의료</option>
+                <option value="기타">기타</option>
+            </select>
+        </p>
+        <p>자기소개</p>
+        <p><textarea cols="50" rows="5" name="content"></textarea></p>
+        <p><input type="submit" value="가입"><input type="reset" value="다시작성"><input type="button" value="눌러보세요" onclick="alert('안녕?')"></p>
+    </form>
+</body>
+</html>
